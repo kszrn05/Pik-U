@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pik-U</title>
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body class="body-img" id="createOrderBody">
+    <header class="header justify-content-space-between background-transparent">
+      <img
+        src="../images/back-icon-white.png"
+        alt="app-logo"
+        class="img img-pointer img-btn"
+        id="btnBack"
+      />
+      <img
+        src="../images/heart-icon.png"
+        alt="app-logo"
+        class="img img-pointer img-btn"
+      />
+    </header>
+    <main class="padding-none">
+      <section class="ingredients">
+        <div class="ingredient-display">
+          <h4>ingredients</h4>
+          <div class="ingredents-list" id="listIngredients">
+            <!-- <img src="../images/tomato.png" alt="" class="img img-ingredient" /> -->
+          </div>
+        </div>
+        <div class="ingredient-picker">
+          <div class="category">
+            <a id="btnBun">Bun</a>
+            <a id="btnVegetables">Vegetables</a>
+            <a id="btnMeat">Meat</a>
+            <a id="btnSauce">Sauce</a>
+          </div>
+          <div class="add-ons-container" id="addOnsContainer"></div>
+          <button class="btn btn-main btn-block text-center" id="btnAddToCart">
+            add to cart
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="../js/data.js"></script>
+  <script src="./js/CreateOrderController.js"></script>
+</html>

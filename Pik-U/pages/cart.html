@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pik-U</title>
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <!-- QR -->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+    <!-- Crypto JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+      integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body class="body-img" id="createOrderBody">
+    <header class="header justify-content-space-between grey-700 text-white">
+      <!-- <img
+        src="../images/back-icon-white.png"
+        alt="app-logo"
+        class="img img-pointer img-btn"
+        id="btnBack"
+      /> -->
+      <h4>your cart</h4>
+      <img
+        src="../images/add-icon-white.png"
+        alt="app-logo"
+        class="img img-pointer img-btn"
+        id="btnAddMore"
+      />
+    </header>
+    <main class="padding-none">
+      <section class="cart-order-container" id="listCartItems"></section>
+      <footer class="footer">
+        <div class="total-container">
+          <p>subtotal:</p>
+          <p>&#8369;<span id="subtotal">0</span></p>
+          <p>discount:</p>
+          <p>&#8369;<span id="discount">0</span></p>
+          <p>total:</p>
+          <p>&#8369;<span id="total">0</span></p>
+        </div>
+        <hr />
+        <button class="btn btn-main btn-block text-center" id="btnPlaceOrder">
+          place order
+        </button>
+      </footer>
+    </main>
+    <!-- The Modal -->
+    <div id="qrModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="" id="qrcode" alt="qrcode" srcset="" />
+        <button class="btn btn-main" id="btnSave">save for later</button>
+      </div>
+    </div>
+  </body>
+  <script src="../js/data.js"></script>
+  <script src="./js/encryption.js"></script>
+  <script src="./js/CartController.js"></script>
+</html>
